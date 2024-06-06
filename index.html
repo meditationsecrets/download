@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Redirect to Google Play Store if Android
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.example.meditationsecrets";
+        }
+        // Redirect to Apple App Store if iOS
+        else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/lt/app/meditation-secrets/id6448990385";
+        } else {
+            // Default redirect (can be one of the above or a landing page)
+            window.location.href = "https://play.google.com/store/apps/details?id=com.p9o5m5t4hw3k.p5clmfuoeapp&hl=en_US";
+        }
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, please visit <a href="https://apps.apple.com/lt/app/meditation-secrets/id6448990385">Google Play Store</a> or <a href="https://play.google.com/store/apps/details?id=com.p9o5m5t4hw3k.p5clmfuoeapp&hl=en_US">Apple App Store</a>.</p>
+</body>
+</html>
